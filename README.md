@@ -6,7 +6,7 @@ Dieses Projekt enthält ein Bash-Skript und eine Systemd-Service-Datei, um den P
 
 Das Bash-Skript `proxy-check.sh` überprüft den Status des angegebenen Hosts im Netzwerk mithilfe des Ping-Befehls. Wenn der Host erreichbar ist, werden die Proxy-Einstellungen gesetzt. Andernfalls werden die Proxy-Einstellungen entfernt.
 
-Die Konfigurationsvariablen, einschließlich des zu überprüfenden Hosts und der Proxy-Einstellungen, werden in einer separaten Konfigurationsdatei (`proxy-check.conf`) gespeichert.
+Die Konfigurationsvariablen, einschließlich des zu überprüfenden Hosts und der Proxy-Einstellungen, werden in einer separaten Konfigurationsdatei (`proxy.conf`) gespeichert.
 
 Die Systemd-Service-Datei `proxy-check.service` ermöglicht es, den Proxy Check Service automatisch beim Systemstart zu starten und den Service kontinuierlich zu überwachen. Bei einem Absturz des Dienstes oder einem Fehler im Skript wird der Service automatisch neu gestartet.
 
@@ -15,13 +15,13 @@ Die Systemd-Service-Datei `proxy-check.service` ermöglicht es, den Proxy Check 
 1. Klone das Repository:
 
    ```plaintext
-   git clone https://github.com/your-username/proxy-check-service.git
+   git clone https://github.com/SoulofSorrow/Ubuntu-Proxy-Changer.git
    ```
 
 2. Navigiere in das Verzeichnis:
 
    ```plaintext
-   cd proxy-check-service
+   cd Ubuntu-Proxy-Changer
    ```
 
 3. Bearbeite die Konfigurationsdatei `proxy-check.conf` und setze die entsprechenden Werte für den zu überprüfenden Host und die Proxy-Einstellungen.
